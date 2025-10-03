@@ -32,4 +32,4 @@ class TestCLIIntegration:
         result = self.run_cli('subtract', '5')
         assert result.returncode == 1
         # CLI prints a specific error message for this case
-        assert "Error:" in result.stdout.strip()
+        assert result.stdout.strip() == "Error: Operation 'subtract' requires two arguments."
