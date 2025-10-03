@@ -16,6 +16,7 @@ def multiply(a, b):
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Both arguments must be numbers")
     
+    
     print(f"Multiplying {a} × {b}")  # Added logging
     result = a * b
     print(f"Result: {result}")
