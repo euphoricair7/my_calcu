@@ -14,10 +14,6 @@ def calculate(operation, num1, num2=None):
     """Simple calculator CLI"""
 
     try:
-        if operation in ['subtract', 'add', 'multiply', 'divide', 'power'] and num2 is None:
-            click.echo(f"Error: Operation '{operation}' requires two arguments.")
-            sys.exit(1)
-
         if operation == 'add':
             result = add(num1, num2)
         elif operation == 'subtract':
